@@ -50,5 +50,10 @@ namespace Tests
             // Verify that each score's game region matches the provided game region.
             Assert.That(scores, Is.All.Matches<Score>(score => score.GameRegion == gameRegion));
         }
+        [Test]
+        public void DummyTest(int x)
+        {
+            throw new Exception("Dummy Test");
+        }
     }
 }
